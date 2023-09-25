@@ -20,12 +20,20 @@
    - https://www.w3.org/blog/news/archives...
    - https://developer.mozilla.org/es/docs...  -->
 
+   <h2>Aprendiendo HTML</h2>
+   <p>Hola, escribiendo mi primer documento HTML</p>
+   <hr>
+   <h2>Encabezado HTML</h2>
+    <marquee><h1>Hola Mortales</h1></marquee>
    <h1>Encabezado de nivel 1</h1>
    <h2>Encabezado de nivel 2</h2>
    <h3>Encabezado de nivel 3</h3>
    <h4>Encabezado de nivel 4</h4>
    <h5>Encabezado de nivel 5</h5>
    <h6>Encabezado de nivel 6</h6>
+    <hr>
+    <h2>Etiquetas de Texte Básicas</h2>
+
    <p>Un párrafo</p>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
      sed dignissimos voluptatum nobis doloribus et sit magni, quisquam 
@@ -37,6 +45,8 @@
         e=mc <sup>2</sup>,<!-- Superindice --> H<sub>2</sub>O <!-- subindice -->,
         <mark>marcatexto</mark>, <small>letras pequeñas</small>
     </p>
+    <hr>
+    <h2>Etiquetas de Texto Semánticas</h2>
 
     <!-- Etiqueta semantica -->
     <p>
@@ -45,7 +55,8 @@
 
     <blockquote>Yo sólo sé, que no se nada</blockquote> <!-- utilizado para realizar una referencia -->
     <cite>Sócrates</cite><!-- Utilizado para hacer cita -->
-
+    <hr>
+    <h2>Etiquetas de Saltos</h2>
     <!-- Salto de paquina -->
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Ratione modi 
@@ -53,7 +64,56 @@
         <br>quasi molestiae quo laboriosam sunt natus quam blanditiis quia fugit.
     </p>
     <hr><!-- Salto de linea con borde semantico -->
-</body>
+    <h2>Etiquetas de Formateo</h2>
+    <p>
+    <pre>
+    Tareas por hacer
+    - HTML
+        - Terminar de grabar las secciones de este curso.
+        - Editar en un sólo Video
+    - CSS
+        - Comenzar a grabar secciones CSS
+        - Editar en un sólo Video
+    </pre>
+    </p>
+    <hr>
+    <p>
+        <code>Este texto está en formato de codigo</code>
+    </p>
+    <hr>
 
+    <p>
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Etiquetas Semánticas Estructurales</h2>
+    <div>Es una etiqueta contenedora que no tiene Semántica</div>
+    <header>header - Cabecera de un sitio web o de una sección </header>
+    <main>
+        main - Define la seccion principal del documento, solo puede existir una
+        <br>etiqueta maim por documento
+    </main>
+    <footer>footer - Pie de pagina de un sitio web o de una seccion</footer>
+    <nav>nav - Representa una navegacion</nav>
+    <article>
+        article - Representa una seccion autocontenido (que por si sola se explica)
+    </article>
+    <aside>aside - Representa contenido complementario o secundario</aside>
+    <section>section - Representa una seccion de contenido generico</section>
+</body>
 
 </html>
