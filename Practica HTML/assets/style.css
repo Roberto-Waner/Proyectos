@@ -1,0 +1,12 @@
+body{
+    font-family: arial;
+}
+
+h1{
+    color: indigo;
+}
+
+img{
+    max-width: 100%;        /* Segunda forma de adaptar una imagen, esta regla se aplica a todas las etiquetas */
+    height: auto;
+}
