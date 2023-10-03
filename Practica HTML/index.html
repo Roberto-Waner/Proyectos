@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <h2 id="inicio">Aprendiendo HTML</h2>
     <!-- Esto es un comentario -->
    <p>Hola mundo</p>
    <!-- - https://www.w3.org/html/
@@ -28,10 +29,32 @@
    - https://www.w3.org/blog/news/archives...
    - https://developer.mozilla.org/es/docs...  -->
 
-   <h2>Aprendiendo HTML</h2>
+   
    <p>Hola, escribiendo mi primer documento HTML</p>
+   <h3>Temario del Curso</h3>
+   <!-- ul>li*18>a -->
+   <ul>
+    <li><a href="index.html#encabezados">Encabezado HTML</a></li>
+    <li><a href="index.html#texto-basico">Etiquetas de Texte Básicas</a></li>
+    <li><a href="index.html#texto-semanticos">Etiquetas de Texto Semánticas</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+   </ul>
    <hr>
-   <h2>Encabezado HTML</h2>
+   <h2 id="encabezados">Encabezado HTML</h2>
     <!-- <marquee><h1>Hola Mortales</h1></marquee> -->
    <h1>Encabezado de nivel 1</h1>
    <h2>Encabezado de nivel 2</h2>
@@ -39,8 +62,9 @@
    <h4>Encabezado de nivel 4</h4>
    <h5>Encabezado de nivel 5</h5>
    <h6>Encabezado de nivel 6</h6>
+   <a href=""></a>
     <hr>
-    <h2>Etiquetas de Texte Básicas</h2>
+    <h2 id="texto-basico">Etiquetas de Texte Básicas</h2>
 
    <p>Un párrafo</p>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -54,7 +78,7 @@
         <mark>marcatexto</mark>, <small>letras pequeñas</small>
     </p>
     <hr>
-    <h2>Etiquetas de Texto Semánticas</h2>
+    <h2 id="texto-semanticos">Etiquetas de Texto Semánticas</h2>
 
     <!-- Etiqueta semantica -->
     <p>
@@ -218,11 +242,7 @@
             <td>Fenix</td>
             <td>Bronce</td>
         </tr>
-        <tr>
-            <td>Mistry</td>
-            <td>Lagarto</td>
-            <td>Plata</td>
-        </tr>
+        
         <tr>
             <td>Saga</td>
             <td>Geminis</td>
@@ -233,17 +253,15 @@
             <td>Ofiuco</td>
             <td>Plata</td>
         </tr>
-        <tr>
-            <td>Odiseo</td>
-            <td>Ofiuco</td>
-            <td>Dorada</td>
-        </tr>
+        
     </table>
     <br><br><br><br>
     <table>
         <thead>
             <tr>
-                <th colspan="3">Tabla de los Santos de Athena</th>
+                <th colspan="3">Tabla de los Santos de Athena</th> <!-- el atributo colspan se usa 
+                para determinar cuanta columnas se quiere tomar dentro de una tabla
+                de HTML -->
             </tr>
             <tr>
                 <th>Nombre</th>
@@ -253,13 +271,13 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="2">Ikki</td>
+                <td>Ikki</td>
                 <td>Fenix</td>
                 <td>Bronce</td>
             </tr>
             <tr>
-                <td>Shaina</td>
-                <td>Ofiuco</td>
+                <td>Mistry</td>
+                <td>Lagarto</td>
                 <td>Plata</td>
             </tr>
             <tr>
@@ -267,12 +285,37 @@
                 <td>Geminis</td>
                 <td>Dorado</td>
             </tr>
+            <tr>
+                <td>Shaina</td>
+                <td rowspan="2">Ofiuco</td> <!-- Para ocupar dos filas -->
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Odiseo</td>
+                <td>Dorada</td>
+            </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th colspan="3"> <small> Saint Seiya fue creado por Masami Kurumada</small></th>
+            </tr>
         </tfoot>
     </table>
     <hr>
+    <h2>Enlaces</h2>
+    <a href="hola.html">Hacia la pagina Hola</a>
+    <br>
+    <a href="https://jonmircha.com" target="_blank" rel="nofollow">Visita el sitio web de jonmircha.com</a>
+    <br><br><br>
+    <a href="https://jonmircha.com/cursos" target="_blank">
+        <img src="img/medicine_science_dna_color.svg" alt="ir hacia los cursos de jonmircha.com" width="40" 
+        height="40">
+    </a>
+    <a href="https://youtube.com/jonmircha" target="_blank">
+        <img src="img/3.png" alt="Ingresa al canal de youtube de jonmircha.com" width="20" height="20">
+    </a>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2>Scripts en HTML</h2>
     <hr>
     <script>
