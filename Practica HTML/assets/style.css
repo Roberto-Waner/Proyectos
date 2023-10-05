@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth; /* Para hacer subir y bajar de manera fluida con los enlaces */
+}
 body{
     font-family: arial;
 }
