@@ -449,10 +449,66 @@
     <br>
     <input type="hidden" name="idioma" value="es">
     <br>
-    <input type="email">
+    <input type="email"> <!-- utilizado para introducir correos electronica -->
+    <br>
+    <input type="number"> <!-- para crear cuadro de ingresar solo numeros -->
+    <br>
+    <input type="tel"> <!-- Se utiliza para agregar numero telefonico -->
+    <br>
+    <input type="password"> <!-- Se utiliza para agregar contraseñas -->
+    <br>
+    <input type="search"> <!-- para crear un motor de buqueda limitada -->
+    <br>
+
+    <textarea cols="50" rows="5"></textarea> <!-- se utiliza para crear cuadro de comientarios -->
+    <!-- el atributo rows y cols se utiliza para indicar cuantos renglenes se va a tener -->
+    <br>
+    <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>       <!-- para poner listas y te permite selecionar entre -->
+        <option value="">JS</option>
+        <option value="">PHP</option>
+        <option value="">Python</option>
+    </select> 
+    <br><br><br>
+    <select name="" id="" multiple>
+        <option value="">HTML</option>
+        <option value="">CSS</option>       <!-- para poner listas y te permite selecionar entre -->
+        <option value="">JS</option>
+        <option value="">PHP</option>
+        <option value="">Python</option>
+    </select> 
     <br>
     <a href="index.html#inicio">👆</a>
-    <hr>
+    <br>
+    <input type="text" readonly value="ROberto Waner"> <!-- para poner cuadro de texto de solo lectura -->
+    <br>
+    <input type="text" value="Perez Waner" readonly disabled> <!-- el atributo disabled hacer que el cuadro de texto este desabilitado -->
+    <br>
+    <input type="text" placeholder="Ingrese su Nombre">
+    <br>
+    <h3>Ejemplo de Formularios</h3>
+    <h4>Formulario de login</h4>
+    <!-- https://jonmircha.com/mentoria -->
+    <!-- https://jonmircha.com/?usuario=Roberto&password=12345qwert -->
+    
+    <form action="https://jonmircha.com/" method="post" autocomplete="off">
+        <!-- el atributo autocomplete se utiliza para activar o desactivar el autocompletado -->
+        
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese la contraseñas">
+        <br>
+        
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
+    <a href="index.html#inicio">👆</a>
+    
     <h2>Scripts en HTML</h2>
     <hr>
     <script>
