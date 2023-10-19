@@ -402,8 +402,8 @@
     <h2 id="audio-video">Audio y Video</h2>
     <audio src="media/audio/G-Eazy - No Limit (Official Audio) ft. A$AP Rocky, Cardi B.mp3" controls preload></audio>
     <br>
-    <video src="media/video/Tengen vs Gyutaro (Final Fight)  Demon Slayer Season 2 Episode 17 [4K 60FPS].mp4" 
-    controls preload poster="img/uzui_vs_gyutaro.jpg"></video>
+    <video src="media/video/Asta and Yami vs Dante!  Black Clover.mp4" 
+    controls preload poster="img/cagdas-elvan-asta-yami-dante-final.jpg"></video>
     <br>
     <a href="index.html#inicio">👆</a>
     <hr>
@@ -487,6 +487,7 @@
     <br>
     <input type="text" placeholder="Ingrese su Nombre">
     <br>
+
     <h3>Ejemplo de Formularios</h3>
     <h4>Formulario de login</h4>
     <!-- https://jonmircha.com/mentoria -->
@@ -496,17 +497,71 @@
         <!-- el atributo autocomplete se utiliza para activar o desactivar el autocompletado -->
         
         <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario">
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$" 
+        title="El campo sólo acepta letras" required>
         <br>
-
+        <!-- <input type="text" name="email" autocomplete="off"> -->
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Ingrese la contraseñas">
+        <input type="password" name="password" id="password" placeholder="Ingrese la contraseñas" required>
         <br>
         
         <input type="submit">
         <br>
         <input type="reset">
     </form>
+    <br>
+    <h4>Selects, Radios y Checkbox</h4>
+    <form>
+        <p>Elige tu idioma:</p>
+        <select name="idioma" required> <!-- el atributo "required" lanza una cuadro de dialogo que requiere completar obligatoriamente -->
+            <option value="" selected>Elige una opcion</option> <!-- el atributo "selected" sirve para dejar selecionado por defecto -->
+            <option value="en">Ingles</option>
+            <option value="es">Español</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugues</option>
+        </select>
+
+        <p>Elige tu lenguaje de programacion favorito:</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+        <label for="radio-js">JavaScript</label>
+
+        <input type="radio" name="lenguaje" id="radio-py" value="py"> 
+        <label for="radio-py">Python</label>
+
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-php">PHP</label>
+
+        <!-- <input type="radio" name="lenguaje" id="radio-c++" value="c++" checked> --> <!-- El atributo "checked" sirve para tener un radeo selecionado por defecto -->
+        <!-- <label for="radio-c++">C++</label> -->
+
+        <p>Elige tus intereses:</p>
+        <label>
+            <input type="checkbox" name="intereses" value="musica"> 
+            Musica
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="deporte"> 
+            Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="finanza"> 
+            Finanzas
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="salud"> 
+            Salud
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="tecnologia"> 
+            Tecnologia
+        </label>
+
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
     <a href="index.html#inicio">👆</a>
     
     <h2>Scripts en HTML</h2>
